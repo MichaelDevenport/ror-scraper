@@ -21,11 +21,10 @@ ActiveRecord::Schema.define(version: 20151009103636) do
     t.string   "rating"
     t.string   "genre"
     t.string   "director"
-    t.date     "release_date"
     t.string   "runtime"
     t.integer  "user_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
